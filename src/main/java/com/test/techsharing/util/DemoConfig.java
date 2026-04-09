@@ -8,6 +8,9 @@ public final class DemoConfig {
 
     private DemoConfig() {
     }
+    static {
+        System.out.println("Loading demo.properties");
+    }
 
     public static Properties load() {
         Properties properties = new Properties();
